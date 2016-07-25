@@ -1,0 +1,59 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Name: MyString
+  age: MyString
+  birthday: MyString
+  address: MyString
+  StateofBirth: MyString
+  CityofBirth: MyString
+  height: MyString
+  weight: MyString
+  Licensenumber: MyString
+  State: MyString
+  SSN: MyString
+  Salary: MyString
+  Agency: MyString
+  Job: MyString
+  Doh: MyString
+  Benefactors: MyString
+  DateofBirth: MyString
+  Relationship: MyString
+  AgeofFather: MyString
+  AgeofMother: MyString
+  Living: MyString
+  AgeofFatherDeath: MyString
+  AgeofMotherDeath: MyString
+  cause: MyString
+  Siblings: MyString
+  Married: MyString
+  Medicalinfo: MyText
+
+two:
+  Name: MyString
+  age: MyString
+  birthday: MyString
+  address: MyString
+  StateofBirth: MyString
+  CityofBirth: MyString
+  height: MyString
+  weight: MyString
+  Licensenumber: MyString
+  State: MyString
+  SSN: MyString
+  Salary: MyString
+  Agency: MyString
+  Job: MyString
+  Doh: MyString
+  Benefactors: MyString
+  DateofBirth: MyString
+  Relationship: MyString
+  AgeofFather: MyString
+  AgeofMother: MyString
+  Living: MyString
+  AgeofFatherDeath: MyString
+  AgeofMotherDeath: MyString
+  cause: MyString
+  Siblings: MyString
+  Married: MyString
+  Medicalinfo: MyText

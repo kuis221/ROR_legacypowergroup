@@ -1,0 +1,41 @@
+<div class="top-bar">
+  <div class="top-bar-title"><img src="http://i1167.photobucket.com/albums/q627/spawnreed/leg_zpsdn4xuf6y.png" class="logo"height="5" alt="" /></div>
+  <div>
+    <div class="top-bar-left"></div>
+    <div class="top-bar-right">
+      <ul class="menu">
+      <li>
+        <% if user_signed_in? %>
+        <p class='view'>
+          View Your Policy
+        </p>
+            <!-- Signed in as <%= current_user.email %>. -->
+        <!--<a href="#" class="signinn">Sign in</a>-->
+        <% else %>
+            <%= link_to "Sign in", new_user_session_path, class: 'signinn' %>
+
+      </li>
+      <li>
+        <!--<button type="button" class="button">Search</button>-->
+        <%= link_to "Join", new_user_registration_path, class:'button' %>
+
+        <%end%>
+      </li>
+    </ul>
+  </div>
+  </div>
+</div>
+
+<p id="notice"><%= notice %>
+
+<div class="fold">
+  <div class="caption">
+  <center><h1 class="opaque">LEGACY</h1>
+    <h2 class="leg">LIFE INSURANCE</h2></center>
+      <h3 class="world"> A World of <span> Possibilities. </span></h3>
+        <p class="des">Life Insurance is an investment into the financial legacy of your family. <br> Having good policies in place is the difference between <br> extremely hard times in already troubling times <br> and ease in a troubled time. </p>
+        <div class="wrapper">
+          <div class="btn btn--border btn--primary btn--animated"><%= link_to "blog", blogs_path%></div>
+        </div>
+      </div>
+</div>

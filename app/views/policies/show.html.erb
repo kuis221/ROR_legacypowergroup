@@ -1,0 +1,321 @@
+<div class="top">
+<div class="top-bar">
+  <div class="top-bar-title"><img src="http://i1167.photobucket.com/albums/q627/spawnreed/leg_zpsdn4xuf6y.png" class="logo"height="5" alt="" /></div>
+  <div>
+    <div class="top-bar-left"></div>
+    <div class="top-bar-right">
+      <ul class="menu">
+      <li>
+        <% if user_signed_in? %>
+    <div class="signedin"> <strong>  Welcome, <%= @policy.Name %> </strong> </div>
+            <!-- Signed in as <%= current_user.email %>. -->
+            <!-- <%= link_to "Sign out", destroy_user_session_path, :method => :delete,class: 'signinn'  %> -->
+        <!--<a href="#" class="signinn">Sign in</a>-->
+        <% else %>
+            <!-- <%= link_to "Sign in", new_user_session_path, class: 'signinn' %> -->
+
+      </li>
+      <li>
+        <!--<button type="button" class="button">Search</button>-->
+        <!-- <%= link_to "Join", new_user_registration_path, class:'button' %> -->
+
+        <%end%>
+      </li>
+    </ul>
+  </div>
+  </div>
+</div>
+</div>
+
+<p id="notice"><%= notice %></p>
+
+
+  <%= link_to 'Edit Your Policy', edit_policy_path, id: 'edit' %>
+
+<body class="show">
+  <div class="boxes">
+
+
+
+<div class="box">
+  <header class='section'><h2 class='flot'>Basic Info</h2></header>
+  <div id="chart" class="chart">
+    <div class="words">
+    <strong>Name:</strong>
+    <%= @policy.Name %>
+    <br>
+    <strong>Age:</strong>
+    <%= @policy.age %>
+    <br>
+    <strong>Birthday:</strong>
+    <%= @policy.birthday %>
+  </div>
+</div>
+</div>
+<div class="box1">
+  <header class='section'><h2 class='flot'>Geo Info</h2></header>
+  <div id="spline-chart" class="chart">
+    <div class="words">
+    <strong>Address:</strong>
+    <%= @policy.address %>
+    <br>
+    <strong>State of Birth:</strong>
+    <%= @policy.StateofBirth %>
+    <br>
+    <strong>City of Birth:</strong>
+    <%= @policy.CityofBirth %>
+  </div>
+  </div>
+</div>
+
+<div class="box2">
+  <header class='section'><h2 class='flot'>Bio Info</h2></header>
+  <div id="spline-chart" class="chart">
+    <div class="words">
+    <strong>Height:</strong>
+    <%= @policy.height %>
+    <br>
+    <strong>Weight:</strong>
+    <%= @policy.weight %>
+    <br>
+  </div>
+  </div>
+</div>
+</div>
+
+
+
+<div class="box4">
+<header class='section'><h2 class='flot'>Identity Info</h2></header>
+<div id="chart" class="chart">
+  <div class="words">
+  <strong>License #:</strong>
+  <%= @policy.Licensenumber %>
+  <br>
+  <strong>State on License:</strong>
+  <%= @policy.State %>
+  <br>
+  <strong>SSN#:</strong>
+  <%= @policy.SSN %>
+</div>
+</div>
+</div>
+<div class="box5">
+<header class='section'><h2 class='flot'>Career Info</h2></header>
+<div id="spline-chart" class="chart">
+  <div class="words">
+  <strong>Salary:</strong>
+  <%= @policy.Salary %>
+  <br>
+  <strong>Agency:</strong>
+  <%= @policy.Agency %>
+  <br>
+  <strong>Job Title:</strong>
+  <%= @policy.Job %>
+  <br>
+  <strong>Date of Hire:</strong>
+  <%= @policy.Doh %>
+</div>
+</div>
+</div>
+
+<div class="box6">
+<header class='section'><h2 class='flot'>Your Beneficiaries</h2></header>
+<div id="spline-chart" class="chart">
+  <div class="words">
+  <strong>Beneficiaries:</strong>
+  <%= @policy.Benefactors %>
+  <br>
+  <strong>Dates of Birth:</strong>
+  <%= @policy.DateofBirth %>
+  <br>
+  <strong>Relationships:</strong>
+  <%= @policy.Relationship %>
+  <br>
+</div>
+</div>
+</div>
+
+<div class="box7">
+<header class='section'><h2 class='flot'>Parental Info</h2></header>
+<div id="chart" class="chart">
+  <div class="words">
+  <strong>Age of Father:</strong>
+  <%= @policy.AgeofFather%>
+  <br>
+  <strong>Age of Mother:</strong>
+  <%= @policy.AgeofMother %>
+  <br>
+  <strong>Parents Status:</strong>
+  <%= @policy.Living %>
+  <br>
+  <strong>Father Passed:</strong>
+  <%= @policy.AgeofFatherDeath %>
+  <br>
+  <strong>Mother Passed:</strong>
+  <%= @policy.AgeofMotherDeath %>
+  <br>
+  <strong>Cause of Deaths:</strong>
+  <%= @policy.cause %>
+</div>
+</div>
+</div>
+<div class="box8">
+<header class='section'><h2 class='flot'>Personal Info</h2></header>
+<div id="spline-chart" class="chart">
+  <div class="words">
+  <strong>Siblings:</strong>
+  <%= @policy.Siblings %>
+  <br>
+  <strong>Married:</strong>
+  <%= @policy.Married %>
+  <br>
+  <strong>Medical Info:</strong>
+  <%= @policy.Medicalinfo %>
+  <br>
+</div>
+</div>
+</div>
+
+
+
+</body>
+
+
+<!-- <p>
+  <strong>Name:</strong>
+  <%= @policy.Name %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @policy.age %>
+</p>
+
+<p>
+  <strong>Birthday:</strong>
+  <%= @policy.birthday %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @policy.address %>
+</p>
+
+<p>
+  <strong>Stateofbirth:</strong>
+  <%= @policy.StateofBirth %>
+</p>
+
+<p>
+  <strong>Cityofbirth:</strong>
+  <%= @policy.CityofBirth %>
+</p>
+
+<p>
+  <strong>Height:</strong>
+  <%= @policy.height %>
+</p>
+
+<p>
+  <strong>Weight:</strong>
+  <%= @policy.weight %>
+</p>
+
+<p>
+  <strong>Licensenumber:</strong>
+  <%= @policy.Licensenumber %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @policy.State %>
+</p>
+
+<p>
+  <strong>Ssn:</strong>
+  <%= @policy.SSN %>
+</p>
+
+<p>
+  <strong>Salary:</strong>
+  <%= @policy.Salary %>
+</p>
+
+<p>
+  <strong>Agency:</strong>
+  <%= @policy.Agency %>
+</p>
+
+<p>
+  <strong>Job:</strong>
+  <%= @policy.Job %>
+</p>
+
+<p>
+  <strong>Doh:</strong>
+  <%= @policy.Doh %>
+</p>
+
+<p>
+  <strong>Benefactors:</strong>
+  <%= @policy.Benefactors %>
+</p>
+
+<p>
+  <strong>Dateofbirth:</strong>
+  <%= @policy.DateofBirth %>
+</p>
+
+<p>
+  <strong>Relationship:</strong>
+  <%= @policy.Relationship %>
+</p>
+
+<p>
+  <strong>Ageoffather:</strong>
+  <%= @policy.AgeofFather %>
+</p>
+
+<p>
+  <strong>Ageofmother:</strong>
+  <%= @policy.AgeofMother %>
+</p>
+
+<p>
+  <strong>Living:</strong>
+  <%= @policy.Living %>
+</p>
+
+<p>
+  <strong>Ageoffatherdeath:</strong>
+  <%= @policy.AgeofFatherDeath %>
+</p>
+
+<p>
+  <strong>Ageofmotherdeath:</strong>
+  <%= @policy.AgeofMotherDeath %>
+</p>
+
+<p>
+  <strong>Cause:</strong>
+  <%= @policy.cause %>
+</p>
+
+<p>
+  <strong>Siblings:</strong>
+  <%= @policy.Siblings %>
+</p>
+
+<p>
+  <strong>Married:</strong>
+  <%= @policy.Married %>
+</p>
+
+<p>
+  <strong>Medicalinfo:</strong>
+  <%= @policy.Medicalinfo %>
+</p>
+
+<%= link_to 'Edit', edit_policy_path(@policy) %> |
+<%= link_to 'Back', policies_path %> -->

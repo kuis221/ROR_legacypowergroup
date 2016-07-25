@@ -1,0 +1,1 @@
+json.extract! @policy, :id, :Name, :age, :birthday, :address, :StateofBirth, :CityofBirth, :height, :weight, :Licensenumber, :State, :SSN, :Salary, :Agency, :Job, :Doh, :Benefactors, :DateofBirth, :Relationship, :AgeofFather, :AgeofMother, :Living, :AgeofFatherDeath, :AgeofMotherDeath, :cause, :Siblings, :Married, :Medicalinfo, :created_at, :updated_at
