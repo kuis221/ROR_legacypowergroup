@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'planner/index'
+
   resources :blogs
   resources :posts
   devise_for :users

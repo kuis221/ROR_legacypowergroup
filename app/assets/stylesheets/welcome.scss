@@ -22,12 +22,13 @@
 }
 
 .top-bar-right{
-  margin: 25px;
+  margin-top: 1.8%;
+  margin-left: -10%;
 }
 
 .button{
   position: absolute;
-  right:110px;
+  margin-left: -11%;
   color: white;
   background-color: transparent;
   border: 1px solid gray;
@@ -59,7 +60,7 @@
   font-size: 14px;
   color: #9E9E9E;
   position: absolute;
-  right:230px;
+  margin-left: -17%;
 }
 
 .fold{
@@ -110,7 +111,7 @@ width: 100%;
   left: 120px;
   font-weight: lighter;
   color: #9E9E9E;
-  font-size: 1.8em;
+  font-size: 1.5em;
   font-family: helvetica;
   line-height: 30px;
 
@@ -118,9 +119,9 @@ width: 100%;
 
 .wrapper {
   position: absolute;
-  top: 530px;
-  left: 18%;
-  width:180px;
+  top: 525px;
+  left: 16.4%;
+  width:217px;
   height: 40px;
 
 
@@ -138,6 +139,7 @@ width: 100%;
   z-index: 1;
   cursor: pointer;
   height: 100%;
+  width: 100%;
 
 
   &:focus {
@@ -147,6 +149,7 @@ width: 100%;
 
 .btn--primary {
   color: lightslategray;
+  width:100%;
 }
 
 .btn--border {
@@ -154,6 +157,7 @@ width: 100%;
   border-style: solid;
   border-radius: 10px;
   box-sizing: border-box;
+  width: 100%;
 }
 
 .btn--animated {
@@ -162,6 +166,7 @@ width: 100%;
 
   &.btn--border.btn--primary {
     border: 1px solid lightslategray;
+    width: 100%;
   }
 
   &:before {
@@ -171,17 +176,19 @@ width: 100%;
     left: 0;
     right: 0;
     bottom: 0;
-    background: lightslategray;
+    background-color: #1976D2;
     transform: scaleX(0);
     transform-origin: 0 50%;
     transition-property: transform;
     transition-duration: 0.5s;
     transition-timing-function: ease-out;
     z-index: -1;
+    width:100%;
   }
 
   &:hover {
     color: white;
+    background-color: transparent;
 
     &:before {
       transform: scaleX(1);
@@ -206,4 +213,20 @@ footer{
   bottom: 0px;
   left: 0;
   height: 50px;
+}
+
+.link{
+  margin: 0%;
+  padding: 0%;
+  width: 100%;
+
+}
+
+.link:hover{
+  margin: 0%;
+  padding: 0%;
+  width: 100%;
+  color:white;
+  background-color: transparent;
+
 }
