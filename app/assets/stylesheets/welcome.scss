@@ -72,13 +72,18 @@
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
+
+  .fold-desc {
+    display: none;
+  }
 }
 
 .caption{
-position: absolute;
-top:-50px;
-width: 100%;
+  position: absolute;
+  top:-50px;
+  width: 100%;
 }
+
 .opaque{
   color: #3974e5;
   position: absolute;
@@ -87,6 +92,7 @@ width: 100%;
   font-size: 8em;
   opacity: .1;
 }
+
 .leg{
   position: absolute;
   top: 210px;
@@ -95,6 +101,7 @@ width: 100%;
   font-weight: 400;
   font-size: 3.5em;
 }
+
 .world{
   position: absolute;
   top: 285px;
@@ -123,8 +130,6 @@ width: 100%;
   left: 16.4%;
   width:217px;
   height: 40px;
-
-
   transform: translate(-50%, -50%);
 }
 
